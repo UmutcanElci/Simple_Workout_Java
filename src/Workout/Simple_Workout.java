@@ -20,7 +20,7 @@ public class Simple_Workout {
          */
 
         //Java program to find the area of a triangle whose three sides are given
-
+        /*
         int a,h;
         int area;
         System.out.println("Enter first side : ");
@@ -31,6 +31,43 @@ public class Simple_Workout {
         area = (a * h) / 2;
 
         System.out.println("Area of triangle is : " + area);
+        */
+
+        //Java program to find average of an int Array
+        /*
+        int n = input.nextInt();
+        int sum = 0;
+        int avrg = 0;
+        int arr[] = new int[n];
+
+        for(int i = 0; i<arr.length; i++){
+          arr[i] = input.nextInt();
+        }
+        for(int i = 0; i<arr.length; i++){
+            sum += arr[i];
+        }
+        avrg = sum/n;
+        System.out.println(avrg);
+
+        */
+
+        //Create a Java program to sort an Array of numeric data
+
+        int n = input.nextInt();
+        int arr[] = new int[n];
+
+        for(int i = 0; i< arr.length;i++){
+            arr[i] = input.nextInt();
+        }
+
+        //to Sort
+
+
+
+
+
+
+
 
     }
 }
