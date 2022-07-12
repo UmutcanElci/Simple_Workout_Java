@@ -55,12 +55,29 @@ public class Simple_Workout {
 
         int n = input.nextInt();
         int arr[] = new int[n];
+        int holder;
 
         for(int i = 0; i< arr.length;i++){
             arr[i] = input.nextInt();
         }
 
         //to Sort
+        for(int i = 0; i< arr.length; i++){
+            for(int a = i+1; a<arr.length; a++){
+                if(arr[i]>arr[a]) {
+                    holder = arr[i];
+                    arr[i] = arr[a];
+                    arr[a] = holder;
+                }
+            }
+        }
+
+
+
+        System.out.println("Sorted list in ascending");
+        for(int i = 0; i< arr.length;i++){
+            System.out.println(arr[i]);
+        }
 
 
 
