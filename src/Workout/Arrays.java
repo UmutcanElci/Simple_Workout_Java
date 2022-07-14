@@ -30,11 +30,11 @@ public class Arrays {
         int min = array[0];
         for (int i = 0; i < array.length;i++){
             //array[] = {4,7,3,1,9}
-            //4 < 4 false 7 < 4 false 3 < 4 true 1 < 3 true 9 < 1 false so min value is  1
+            //4 < 4 false 7 < 4 false 3 < 4 true 1 < 3 true 9 < 1 false so min value is  1.
             if(array[i] < min){
                 min = array[i];
             }
-            //4 > 4 false 7 > 4 true 3 > 7 false 1 > 7 false 9 > 7 true so max vale is 9
+            //4 > 4 false 7 > 4 true 3 > 7 false 1 > 7 false 9 > 7 true so max vale is 9.
             if(array[i] > max){
                 max = array[i];
             }
@@ -46,9 +46,40 @@ public class Arrays {
     public static void printSelectionSortIntArray(int[] array){
         // let say our array[4, 2, 7, 1, 8, 5, 9]
         int temp;
-        //temp is a holder
-        for(int i = 0; i< array.length;i++){
+        //temp is a holder.
 
+        for(int i = 0; i < array.length; i++){
+            for(int a = i + 1; a<array.length;a++){
+                if(array[i]> array[a]){
+                    temp = array[i];
+                    array[i] = array[a];
+                    array[a] = temp;
+                }
+            }
+            // So the logic is simple we look side by side the values.
+            // first index is bigger than the second index swap.
+        }
+        for(int i = 0; i<array.length;i++){
+            System.out.print(" "+array[i]);
+        }
+
+    }
+
+    public static void printInsertionSortIntArray(int[] array){
+        int temp;
+        int a;
+        for(int i = 1; i< array.length;i++){
+            temp = array[i];
+            a = i - 1;
+            if(array[i]>array[a]){
+                array[a] = array[i];
+                a = i + 1;
+            }
+            array[a] = temp;
+
+        }
+        for(int i = 0; i<array.length;i++){
+            System.out.print(" "+array[i]);
         }
 
     }
