@@ -43,10 +43,13 @@ public class Arrays {
         System.out.println("Min value of the array : "+ min);
     }
 
-    public static void printReversedIntArray(int[] array){
+    public static void printSelectionSortIntArray(int[] array){
         // let say our array[4, 2, 7, 1, 8, 5, 9]
         int temp;
         //temp is a holder
+        for(int i = 0; i< array.length;i++){
+
+        }
 
     }
 }
