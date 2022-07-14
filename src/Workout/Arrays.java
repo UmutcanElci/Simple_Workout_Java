@@ -66,17 +66,18 @@ public class Arrays {
     }
 
     public static void printInsertionSortIntArray(int[] array){
+        //Insert Sort one of the other sorting technique start with first index[1] and compare the zero index[0].
+        //If the [1]>[0] swap it and look for the next indexes.
         int temp;
         int a;
-        for(int i = 1; i< array.length;i++){
-            temp = array[i];
-            a = i - 1;
-            if(array[i]>array[a]){
-                array[a] = array[i];
-                a = i + 1;
-            }
-            array[a] = temp;
-
+        for(int i = 1; i < array.length;i++){
+             temp = array[i];//Index 1
+             a = i -1;//Index 0
+             while (a>=0 && array[a] > temp){
+                 array[a+1] = array[a];
+                 a = a-1;
+             }
+             array[a+1] = temp;
         }
         for(int i = 0; i<array.length;i++){
             System.out.print(" "+array[i]);
