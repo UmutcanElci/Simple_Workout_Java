@@ -1,2 +1,5 @@
-package Workout;public class Arrays {
+package Workout;
+
+public class Arrays {
+    
 }
