@@ -35,5 +35,16 @@ public class Multidimensional_Arrays {
         }
 
      */
+    //The thing I can't solve is when I call this method in my main program wants a array[][] with values I found one thing and that's not the actual solutions.
+    //I give my array a value like[10][10] we give huge value cause when the program ask the row and col the values changed, and we can input the 2D array values.
+
+    public static void printfSumOfTwoMatrix(int[][] array1,int[][] array2,int[][] sum){
+
+        for(int i = 0; i< array1.length;i++){
+            for(int a = 0; a< array1.length;a++){
+
+            }
+        }
+    }
     }
 
