@@ -3,7 +3,7 @@ package Workout;
 import java.util.Scanner;
 
 public class TicTacToe {
-
+// That's a tutorial for ticktacktoe
     public static void main(String[] args) {
         //Board
         String[][] board = new String[3][3];
